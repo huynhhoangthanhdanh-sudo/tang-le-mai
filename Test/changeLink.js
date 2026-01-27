@@ -4,13 +4,15 @@ function changeLink() {
   const paragraph = document.getElementById("paragraph");
 
   if (hours >= 5 && hours <= 10) {
-    link.href = "https://www.youtube.com/shorts/UFncnd1APKw";
+    link.src = "https://www.youtube.com/embed/UFncnd1APKw";
     link.textContent = "Hello";
     paragraph.textContent = "Good morning 🌞";
-  } else if (hours > 10 && hours <= 15) {
+  } else if (hours >= 10 && hours <= 15) {
+    link.src = "";
     link.textContent = "...";
     paragraph.textContent = "Have a nice day!!!";
-  } else if (hours > 15 && hours <= 19) {
+  } else if (hours >= 15 && hours <= 19) {
+    link.src = "";
     link.textContent = "Enjoy";
     paragraph.textContent = "Good afternoon ✨";
   } else {
