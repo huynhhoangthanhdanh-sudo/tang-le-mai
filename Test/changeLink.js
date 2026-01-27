@@ -31,24 +31,24 @@ function changeLink() {
     "Good night💤💤💤",
     "Sleep well💤💤💤",
     "Gud nite💤💤💤",
-    "99 - Nighty night",
+    "Nighty night",
   ];
 
   if (hours >= 5 && hours < 10) {
-    link.src = "https://www.youtube.com/embed/ofaAppWeHZA";
+    link.src = "https://www.youtube.com/embed/VqRD--BREbo";
     button.textContent = "Hello";
     paragraph.textContent = Morning[Math.floor(Math.random() * Morning.length)];
   } else if (hours >= 10 && hours < 15) {
-    link.src = "https://www.youtube.com/embed/ofaAppWeHZA";
+    link.src = "https://www.youtube.com/embed/TRTt6oSAsVA";
     button.textContent = "Play";
     paragraph.textContent = Noon[Math.floor(Math.random() * Noon.length)];
   } else if (hours >= 15 && hours < 20) {
-    link.src = "https://www.youtube.com/embed/ofaAppWeHZA";
+    link.src = "https://www.youtube.com/embed/zT5JozFyWnQ";
     button.textContent = "Enjoy";
     paragraph.textContent =
       Afternoon[Math.floor(Math.random() * Afternoon.length)];
   } else if (hours >= 20 && hours < 22) {
-    link.src = "https://www.youtube.com/embed/ofaAppWeHZA";
+    link.src = "https://www.youtube.com/embed/8OLAi6Eba98";
     button.textContent = "Relax";
     paragraph.textContent =
       BeforeNight[Math.floor(Math.random() * BeforeNight.length)];
