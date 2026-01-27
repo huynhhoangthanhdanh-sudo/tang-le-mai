@@ -1,0 +1,23 @@
+{
+  "name": "Tặng bạn tôi",
+  "short_name": "Tặng bạn",
+  "description": "Lời chúc theo thời gian trong ngày dành cho người bạn đặc biệt",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1a2e",
+  "theme_color": "#ffb4a2",
+  "icons": [
+    {
+      "src": "Anh2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Anh2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

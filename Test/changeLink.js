@@ -31,7 +31,7 @@ function changeLink() {
     "Good night💤💤💤",
     "Sleep well💤💤💤",
     "Gud nite💤💤💤",
-    "Nighty night",
+    "Nighty night💤💤💤",
   ];
 
   if (hours >= 5 && hours < 10) {
