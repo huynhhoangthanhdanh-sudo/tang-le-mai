@@ -21,7 +21,11 @@
         src="https://www.youtube.com/embed/jb5ta8Wbwsg"
         allowfullscreen
       ></iframe>
-      <button id="click" onclick="show()"></button>
+      <button class="button1" id="click" onclick="show()"></button>
+      <div class="send">
+        <input id="name" placeholder="Bạn đang cảm thấy thế nào?" />
+        <button class="button2" onclick="send()">Gửi</button>
+      </div>
     </div>
     <script src="getTime.js" defer></script>
     <script src="changeBackgroundontime.js" defer></script>
@@ -30,6 +34,35 @@
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+    <script>
+      function send() {
+        const mood = document.getElementById("name").value.trim();
+
+        if (!mood) {
+          alert("Bạn chưa nhập gì cả 💭");
+          return;
+        }
+
+        const data = new URLSearchParams();
+        data.append("mood", mood);
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycby80JnkDtknR_qURYhWMc1a__AFXPMHzxv2sErZ6inKavaBUBJrqq7vQ7Dq9ts4m7DN/exec",
+          {
+            method: "POST",
+            body: data,
+          },
+        )
+          .then(() => {
+            alert("Đã gửi thành công 💖");
+            document.getElementById("name").value = "";
+          })
+          .catch((err) => {
+            alert("Có lỗi ròi 😢");
+            console.error(err);
+          });
       }
     </script>
   </body>
