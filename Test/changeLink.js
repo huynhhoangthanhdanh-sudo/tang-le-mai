@@ -35,20 +35,20 @@ function changeLink() {
   ];
 
   if (hours >= 5 && hours < 10) {
-    link.src = "https://www.youtube.com/embed/VqRD--BREbo";
+    link.src = "https://www.youtube.com/embed/hcau3Lz55l0";
     button.textContent = "Hello";
     paragraph.textContent = Morning[Math.floor(Math.random() * Morning.length)];
   } else if (hours >= 10 && hours < 15) {
-    link.src = "https://www.youtube.com/embed/TRTt6oSAsVA";
+    link.src = "https://www.youtube.com/embed/G2XyX5eb4mo";
     button.textContent = "Play";
     paragraph.textContent = Noon[Math.floor(Math.random() * Noon.length)];
   } else if (hours >= 15 && hours < 20) {
-    link.src = "https://www.youtube.com/embed/zT5JozFyWnQ";
+    link.src = "https://www.youtube.com/embed/iXwHptATrjY";
     button.textContent = "Enjoy";
     paragraph.textContent =
       Afternoon[Math.floor(Math.random() * Afternoon.length)];
   } else if (hours >= 20 && hours < 22) {
-    link.src = "https://www.youtube.com/embed/8OLAi6Eba98";
+    link.src = "https://www.youtube.com/embed/WqoVxjNv9oQ";
     button.textContent = "Relax";
     paragraph.textContent =
       BeforeNight[Math.floor(Math.random() * BeforeNight.length)];
