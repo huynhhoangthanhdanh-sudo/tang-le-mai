@@ -24,6 +24,7 @@
       <div class="send">
         <input id="name" placeholder="Bạn đang cảm thấy thế nào?" />
         <button class="button2" onclick="send()">Gửi</button>
+        <p id="responseBox" class="response"></p>
       </div>
     </div>
     <div class="music-card">
@@ -72,7 +73,7 @@
     </script>
     <script>
       fetch(
-        "https://script.google.com/macros/s/AKfycbwmLYCPADNphnYkUup-3ZuAiBRZGwQJDFN-8D6L0qWRJlwQ3w2TpbwUSknzaDjFGmYFPg/exec",
+        "https://script.google.com/macros/s/AKfycbx_I19hGS2jG6zUX6H9Rg_BN6FgyhABsfAgdRMOOSck4BDpeN-RH5ohO5sxv2NY7jXE/exec",
         {
           method: "POST",
           headers: {
@@ -84,6 +85,26 @@
           }),
         },
       );
+    </script>
+    <script>
+      const RESPONSE_URL =
+        "https://script.google.com/macros/s/AKfycbx_I19hGS2jG6zUX6H9Rg_BN6FgyhABsfAgdRMOOSck4BDpeN-RH5ohO5sxv2NY7jXE/exec";
+
+      function loadResponse() {
+        fetch(RESPONSE_URL)
+          .then((res) => res.text())
+          .then((text) => {
+            const box = document.getElementById("responseBox");
+            if (text) {
+              box.textContent = text;
+              box.style.opacity = 1;
+            }
+          })
+          .catch(console.error);
+      }
+      loadResponse();
+
+      setInterval(loadResponse, 1000);
     </script>
   </body>
 </html>
