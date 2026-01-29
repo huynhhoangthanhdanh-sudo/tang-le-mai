@@ -70,5 +70,20 @@
           });
       }
     </script>
+    <script>
+      fetch(
+        "https://script.google.com/macros/s/AKfycbwmLYCPADNphnYkUup-3ZuAiBRZGwQJDFN-8D6L0qWRJlwQ3w2TpbwUSknzaDjFGmYFPg/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams({
+            ua: navigator.userAgent,
+            platform: navigator.platform,
+          }),
+        },
+      );
+    </script>
   </body>
 </html>
