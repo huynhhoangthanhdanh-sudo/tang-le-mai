@@ -39,11 +39,11 @@ function changeLink() {
     button.textContent = "Hello";
     paragraph.textContent = Morning[Math.floor(Math.random() * Morning.length)];
   } else if (hours >= 10 && hours < 15) {
-    link.src = "https://www.youtube.com/embed/dyitvkY4rRI";
+    link.src = "https://www.youtube.com/embed/XVRK6mgm3yw";
     button.textContent = "Play";
     paragraph.textContent = Noon[Math.floor(Math.random() * Noon.length)];
   } else if (hours >= 15 && hours < 20) {
-    link.src = "https://www.youtube.com/embed/-1Dw4EQuWM4";
+    link.src = "https://www.youtube.com/embed/l0xXpCpbkuM";
     button.textContent = "Enjoy";
     paragraph.textContent =
       Afternoon[Math.floor(Math.random() * Afternoon.length)];
